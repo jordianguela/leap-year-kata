@@ -12,7 +12,11 @@ describe("Leap Year calculator", function() {
     expect(leapYearCalc.calculate(1996)).toBe(true);
   });
 
-  it("returns false when it is not a leap year (i.e: 2001)", function() {
+  it("returns false when the year is divisible by 100 but not 400 (i.e: 1900)", function() {
+    expect(leapYearCalc.calculate(1900)).toBe(false);
+  });
+
+  it("returns false when the year is not a leap year (i.e: 2001)", function() {
     expect(leapYearCalc.calculate(2001)).toBe(false);
   });
 

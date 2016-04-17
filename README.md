@@ -6,10 +6,9 @@ Write a function that returns true or false depending on whether its input integ
 - jasmine : testing lib
 - istanbul : test coverage lib
 
-### Setup and code execution
+### Setup
 
 	npm install
-	node src/app.js
 
 ### Post mortem analysis
 TBD

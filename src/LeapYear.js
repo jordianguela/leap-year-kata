@@ -2,7 +2,11 @@ function LeapYear() {
 };
 
 LeapYear.prototype.calculate = function(year) {
-  var mod = year % 4
+  return isDivisibleBy(year, 4);
+};
+
+function isDivisibleBy(number, divisibleBy) {
+  var mod = number % divisibleBy;
   return mod == 0;
 };
 

@@ -2,7 +2,7 @@ function LeapYear() {
 };
 
 LeapYear.prototype.calculate = function(year) {
-  return isDivisibleBy(year, 4) && !isDivisibleBy(year, 100);
+  return isDivisibleBy(year, 4) && (!isDivisibleBy(year, 100) || isDivisibleBy(year, 400));
 };
 
 function isDivisibleBy(number, divisibleBy) {

@@ -6,4 +6,10 @@ describe("Leap Year calculator", function() {
     var leapYearCalc = new LeapYear();
     expect(leapYearCalc.calculate(1996)).toBe(true);
   });
+
+  it("returns false when it is not a leap year (i.e: 2001)", function() {
+    var leapYearCalc = new LeapYear();
+    expect(leapYearCalc.calculate(2001)).toBe(false);
+  });
+
 });
